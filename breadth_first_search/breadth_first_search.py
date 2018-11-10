@@ -1,5 +1,13 @@
 from collections import deque
 
+# about this demo:
+# 广度优先搜索的例子，基本思路：
+# 维护一个队列，待搜索队列，
+# 1，从队列中取出一个元素。
+# 2，如果这个节点是正在寻求的结果，那么结束
+#    否则，将这个节点的邻居放到队列中
+# 3，重复这三个步骤，直到将整个队列为空。
+
 # init test data
 graph = {}
 graph["you"] = ["alice", "bob", "claire"]
@@ -10,8 +18,6 @@ graph["peggy"] = []
 graph["jony"] = []
 graph["anuj"] = []
 graph["thom"] = []
-
-
 # end init test data
 
 
